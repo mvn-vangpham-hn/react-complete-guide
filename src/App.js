@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+
 import "./App.css";
 import Expenses from "./components/Expenses/Expenses";
 import NewExpense from "./components/NewExpense/NewExpense";
+
 const DUMMY_EXPENSES = [
     {
         id: "e1",
@@ -30,6 +32,10 @@ const DUMMY_EXPENSES = [
 ];
 const App = () => {
     const [expenses, setExpenses] = useState(DUMMY_EXPENSES);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6d16e79bdf8e7f1ce3827a963870c61da6f47ad9
     const addExpenseHandler = (expense) => {
         setExpenses((prevState) => {
             return [expense, ...prevState];
